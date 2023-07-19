@@ -16,6 +16,9 @@ a {
 ul {
   list-style: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 body,
 html {
   overflow-x: hidden;
@@ -121,6 +124,89 @@ button:hover {
   display: none;
 }
 
+/* About Us */
+.about {
+  height: 100vh;
+  width: 100%;
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .main img {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  padding: 0 10px;
+  box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6%);
+}
+.all-text {
+  width: 600px;
+  max-width: 100%;
+  padding: 0 10px;
+}
+.main {
+  width: 1290px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.all-text h4 {
+  font-size: 18px;
+  color: #777777;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.all-text h1 {
+  font-size: 65px;
+  color: #111;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.all-text p {
+  font-size: 16px;
+  color: #777777;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+.btn button {
+  height: 50px;
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #111;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+span {
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+button:hover span {
+  width: 100%;
+}
+button:hover {
+  border: none;
+  color: whitesmoke;
+}
+
 /* Upcoming Events */
 section {
   width: 80%;
@@ -156,7 +242,7 @@ p {
   padding: 0px 40px;
 }
 
-/* Past Events */
+/* Past Events
 .content-col {
   width: 40%;
 }
@@ -182,7 +268,7 @@ p {
 .content-col p {
   padding: 0;
   margin: 30px auto;
-}
+} */
 
 /* Footer */
 .footer {
@@ -200,7 +286,18 @@ p {
 }
 
 /* Mobile Device */
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 650px) {
+  /* About Us */
+  .about .main img {
+    margin-bottom: 35px;
+  }
+  .all-text h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
   .menu-btn {
     display: block;
   }
@@ -229,6 +326,17 @@ p {
   .nav-links li {
     margin: 30px auto;
   }
+  /* About Us */
+  .about {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .all-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+
   /* Upcoming Events */
   .row {
     flex-direction: column;
@@ -239,7 +347,7 @@ p {
   .col img {
     max-width: 90%;
   }
-  /* Past Events */
+  /* Past Events
   .past .col {
     width: 100%;
   }
@@ -249,7 +357,7 @@ p {
   }
   .image-gallery img {
     width: 90%;
-  }
+  } */
   /* Footer */
   .footer {
     padding: 10px;
