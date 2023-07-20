@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny Rain</title>
+    <link rel="icon" type="image/x-icon" href="astena_logo.png">
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <img src="astena_logo.png" class="logo">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#past">Events</a></li>
+            <li><a href="team.html">Crackheads</a></li>
+        </ul>
+        <img src="menu-btn.png" alt="" class="menu-btn">
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>OUR TEAM</h1>
+            <div class="line"></div>
+            <p>INTRODUCING THE LINEUP</p>
+            <div>
+                <a href="#team"><button type="button"><span></span>LET'S GO!</button></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Team -->
+    <!-- <!–1st member–> -->
+
+    <div class="col-md-3 col-sm-6">
+
+        <div class="our-team">
+
+            <div class="pic">
+
+                <img src="director.png">
+
+            </div>
+
+            <h3 class="title">Ezam Azhani</h3>
+
+            <span class="post">Director</span>
+
+
+            <!-- <!–social icon–> -->
+
+
+        </div>
+
+    </div>
+
+    <!-- 
+        <!–2nd member–> -->
+
+
+
+    <div class="col-md-3 col-sm-6">
+
+        <div class="our-team">
+
+            <div class="pic">
+
+                <img src="codirector.jpg">
+
+            </div>
+
+            <h3 class="title">Muhamad Ekhmal</h3>
+
+            <span class="post">Co Director</span>
+
+
+            <!-- <!–social Icon–> -->
+
+
+        </div>
+
+    </div>
+
+
+    <!-- <!–3rd member–> -->
+
+
+
+    <div class="col-md-3 col-sm-6">
+
+        <div class="our-team">
+
+            <div class="pic">
+
+                <img src="pr.jpg">
+
+            </div>
+
+            <h3 class="title">Aniq Danial</h3>
+
+            <span class="post">Public Relation</span>
+
+
+
+            <!-- <!–social icon–> -->
+
+
+
+        </div>
+
+    </div>
+
+
+    <!-- <!–4th member–> -->
+
+
+    <div class="col-md-3 col-sm-6">
+
+        <div class="our-team">
+
+            <div class="pic">
+
+                <img src="pr2.jpg">
+
+            </div>
+
+            <h3 class="title">Yusuf Anderson</h3>
+
+            <span class="post">Public Relation</span>
+
+
+            <!-- <!–social icon–> -->
+
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <section class="footer">
+        <p>Copyright © 2023 Sunny Rain</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+
+</html>
