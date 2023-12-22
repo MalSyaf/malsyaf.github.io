@@ -1,7 +1,5 @@
-/* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
 
-/* GLOBAL */
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +36,7 @@ nav {
   justify-content: space-between;
 }
 nav .logo {
-  width: 50px;
+  width: 60px;
 }
 nav ul li {
   list-style: none;
@@ -90,8 +88,8 @@ li a:hover::after {
   transition: background-color 0.3s ease;
 }
 .content a:hover {
-  background-color: #ab20fd; /* Change the background color on hover */
-  border-color: #ab20fd; /* Change the text color on hover */
+  background-color: #ab20fd;
+  border-color: #ab20fd;
 }
 
 @media (min-aspect-ratio: 16/9) {
