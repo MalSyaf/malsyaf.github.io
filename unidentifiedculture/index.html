@@ -5,85 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
     <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
-    <title>Sunny Rain</title>
-    <link rel="icon" type="image/x-icon" href="astena_logo.png">
-    <!-- ==== CSS ==== -->
+    <title>Unidentified Culture</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <img src="astena_logo.png" class="logo">
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#past">Events</a></li>
-            <li><a href="team.html">Crackheads</a></li>
-        </ul>
-        <img src="menu-btn.png" alt="" class="menu-btn">
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="header-content">
+    <div class="banner">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="bg.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">EVENTS</a></li>
+            </ul>
+        </nav>
+        <div class="content">
             <h1>From Stage to Soul</h1>
-            <div class="line"></div>
             <p>Captivating Hearts One Act at a Time</p>
-            <div>
-                <a href="#about"><button type="button"><span></span>LET'S GO!</button></a>
-            </div>
+            <a href="#">LET'S GO!</a>
         </div>
-    </header>
-
-    <!-- About Us -->
-    <section class="about" id="about">
-        <div class="main">
-            <img src="aboutus.png" alt="">
-            <div class="all-text">
-                <h4>About Us</h4>
-                <div class="line"></div>
-                <h1>Refuse to Be Ordinary!</h1>
-                <p>Welcome to Sunny Rain!
-                    We are a dynamic and passionate performing arts organization dedicated to promoting and celebrating
-                    the beauty and power of the arts. With a rich history and a commitment to artistic excellence, we
-                    strive to inspire, entertain, and engage audiences of all ages and backgrounds.</p>
-                <div class="btn">
-                    <a href="team.html"><button type="button"><span></span>Our Team</button></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Upcoming Events -->
-    <section class="upcoming" id="upcoming">
-        <div class="title">
-            <h1>UPCOMING EVENTS</h1>
-            <div class="line"></div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <img src="upcoming_event_1.png" alt="">
-            </div>
-            <div class="col">
-                <img src="upcoming_event_2.png" alt="">
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <section class="footer">
-        <p>Copyright © 2023 Sunny Rain</p>
-    </section>
-
-    <script>
-        const menuBtn = document.querySelector('.menu-btn')
-        const navlinks = document.querySelector('.nav-links')
-
-        menuBtn.addEventListener('click', () => {
-            navlinks.classList.toggle('mobile-menu')
-        })
-    </script>
+    </div>
 </body>
 
 </html>
